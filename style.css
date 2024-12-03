@@ -556,6 +556,7 @@ a:hover{
     background: crimson!important;
 }
 
+
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
@@ -651,6 +652,7 @@ a:hover{
   color: crimson;
   background: none;
 }
+
 /* footer section styling */
 footer{
     background: #111;
