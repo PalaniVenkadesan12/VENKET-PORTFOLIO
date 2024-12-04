@@ -1,7 +1,6 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -294,7 +293,7 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
+/* Certification section styling */
 a:hover{
     
     color: crimson;
@@ -311,7 +310,7 @@ a:hover{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    content: "what i Done";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -403,28 +402,28 @@ a:hover{
     height: 100%;
     left: 0;
     top: 0;
-    background: rgb(227, 11, 54);
+    background: crimson;
 }
 .skills-content .right .Python::before{
     width: 90%;
 }
 .skills-content .right .SQL::before{
-    width: 85%;
+    width: 90%;
+}
+.skills-content .right .Excel::before{
+    width: 90%;
+}
+.skills-content .right .PowerBI::before{
+    width: 60%;
 }
 .skills-content .right .HTML::before{
     width: 100%;
 }
 .skills-content .right .CSS::before{
-    width: 100%;
-}
-.skills-content .right .JavaScript::before{
-    width: 60%;
-}
-.skills-content .right .Excel::before{
     width: 90%;
 }
-.skills-content .right .termuxhacking::before{
-    width: 45%;
+.skills-content .right .JavaScript::before{
+    width: 70%;
 }
 
 /* teams section styling 
@@ -556,7 +555,6 @@ a:hover{
     background: crimson!important;
 }
 
-
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
@@ -652,7 +650,6 @@ a:hover{
   color: crimson;
   background: none;
 }
-
 /* footer section styling */
 footer{
     background: #111;

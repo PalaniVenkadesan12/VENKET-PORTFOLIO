@@ -26,27 +26,27 @@
     function sendEmail(event) {
         event.preventDefault();
 
-    emailjs.sendForm("service_fs48a7k", "template_2m2csv9", {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value,
-    }).then(function(response) {
-        alert("Email sent successfully!");
-    }, function(error) {
-        alert("Failed to send email. " + JSON.stringify(error));
-    });
+    // emailjs.sendForm("service_fs48a7k", "template_2m2csv9", {
+    //     name: document.getElementById("name").value,
+    //     email: document.getElementById("email").value,
+    //     subject: document.getElementById("subject").value,
+    //     message: document.getElementById("message").value,
+    // }).then(function(response) {
+    //     alert("Email sent successfully!");
+    // }, function(error) {
+    //     alert("Failed to send email. " + JSON.stringify(error));
+    // });
 
-        // emailjs.send('service_jjyh0yu","template_2m2csv9', {
-        //     from_name: document.querySelector('input[name="Name"]').value,
-        //     from_email: 'palanivenkadesan8056@gmail.com', // Your Gmail ID
-        //     subject: document.querySelector('input[name="Subject"]').value,
-        //     message: document.querySelector('textarea[name="Message"]').value,
-        // }).then(function(response) {
-        //     alert('Message sent successfully!');
-        // }, function(error) {
-        //     alert('Failed to send message: ' + JSON.stringify(error));
-        // });
+        emailjs.send('service_jjyh0yu","template_2m2csv9', {
+            from_name: document.querySelector('input[name="Name"]').value,
+            from_email: 'palanivenkadesan8056@gmail.com', // Your Gmail ID
+            subject: document.querySelector('input[name="Subject"]').value,
+            message: document.querySelector('textarea[name="Message"]').value,
+        }).then(function(response) {
+            alert('Message sent successfully!');
+        }, function(error) {
+            alert('Failed to send message: ' + JSON.stringify(error));
+        });
     }
 </script>
 </script>
@@ -112,7 +112,7 @@
         </div>
     </section>
 
-     <!-- services section start -->
+     <!-- Certification section start -->
      <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">My Certification</h2>
@@ -184,9 +184,25 @@
                     <div class="bars">
                         <div class="info">
                             <span>SQL</span>
-                            <span>85%</span>
+                            <span>90%</span>
                         </div>
                         <div class="SQL"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                            <span>Excel</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="Excel"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                            <span>Power BI</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="PowerBI"></div>
                     </div>
 
                     <div class="bars">
@@ -200,7 +216,7 @@
                     <div class="bars">
                         <div class="info">
                             <span>CSS</span>
-                            <span>100%</span>
+                            <span>90%</span>
                         </div>
                         <div class="CSS"></div>
                     </div>
@@ -213,14 +229,6 @@
                         <div class="JavaScript"></div>
                     </div>
 
-                    <div class="bars">
-                        <div class="info">
-                            <span>Excel</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="Excel"></div>
-                    </div>
-                   
                 </div>
             </div>
         </div>
@@ -269,30 +277,31 @@
                     </div>
                 </div>
                 <div class="column right">
-                    <div class="text">Message Me</div>
-                    
+                    <div class="text">Message me</div>
+                    <form onsubmit="sendEmail(event)">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" id="name" name="name" placeholder="Name">
+                                <input type="text" placeholder="Name" name="Name">
                             </div>
                             <div class="field email">
-                                <input type="email" name="email" placeholder="Email" required>
+                                <input type="email" placeholder="Email" name="name" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" name="subject" placeholder="Subject" required>
+                            <input type="text" placeholder="Subject" name="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" name="message" placeholder="Message" required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Message.." name="Message" required></textarea>
                         </div>
                         <div class="button-area">
-                            <button type="submit">Send Message</button>
+                            <button type="submit">Send message</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- footer section start -->
     <footer>
